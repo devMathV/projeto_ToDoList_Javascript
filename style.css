@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 45, 207), #35007b);
+    color: white;
+    text-align: center;
+}
+
+#tasks-container {
+    width: 500px;
+    margin: auto;
+}
+
+/* Task-form */
+#tasks-header {
+    margin-top: 30px;
+}
+
+#add-task-form {
+    position: relative;
+    margin: 30px 0;
+}
+
+#add-task-form input {
+    width: 100%;
+    border: 1px solid #35007b;
+    background-color: white;
+    color: #35007b;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#add-task-form input::placeholder {
+    color: #35007b;
+}
+
+#add-btn {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #35007b;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 60px;
+    height: 52px;
+    right: 0;
+    font-size: 28px;
+}
+
+#add-btn:hover {
+    background-color: #35007b;
+    color: white;
+}
+
+/* Tasks container */ 
+
+#tasks-list-container h2 {
+    padding-bottom: 30px;
+}
+
+#task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list li {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid #35007b;
+    background-color: white;
+    color: #35007b;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#task-list span.exe-btn {
+    position: absolute;
+    top: 0;
+    height: 48px;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 40px;
+    text-align: center;
+}
+
+.done-btn {
+    right: 40px;
+}
+
+.done-btn:hover {
+    color: white;
+    background-color: rgb(9, 239, 1);
+}
+
+.remove-btn {
+    right: 0;
+}
+
+.remove-btn:hover {
+    color: white;
+    background-color: rgb(232, 0, 0);
+}
+
+.hide {
+    display: none;
+}
+
+#task-list li.done {
+    text-decoration: line-through;
+    background-color: #35007b;
+    color: white;
+}
